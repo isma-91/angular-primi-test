@@ -1,0 +1,24 @@
+
+.section {
+  height: 100vh;
+}
+
+.example-container {
+height: calc(100vh - var(--mat-toolbar-standard-height));
+  background: #eee;
+}
+.sidebar{
+  min-width: 200px;
+}
+
+.mdc-list {
+  padding: 0px;
+}
+
+.active{
+  background-color: salmon;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}

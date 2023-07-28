@@ -1,1 +1,30 @@
-<p>dashboard works!</p>
+<section>
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>logout</mat-icon>
+    </button>
+  </mat-toolbar>
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav mode="side" class="sidebar" opened>
+      <mat-list role="list">
+        <mat-list-item role="listitem" routerLink="pagina1" [routerLinkActive]="'active'">Pagina 1</mat-list-item>
+        <mat-list-item role="listitem" routerLink="pagina2" [routerLinkActive]="'active'">Pagina 2</mat-list-item>
+        <mat-list-item role="listitem" routerLink="pagina3" [routerLinkActive]="'active'">Pagina 3</mat-list-item>
+      </mat-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</section>

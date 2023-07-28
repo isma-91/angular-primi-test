@@ -7,6 +7,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
+
+
 
 
 
@@ -37,6 +44,11 @@ import { Pagina3Component } from './components/pagina3/pagina3.component';
     ReactiveFormsModule,
     MatButtonModule,
     MatInputModule,
+    MatSidenavModule,
+    MatListModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
